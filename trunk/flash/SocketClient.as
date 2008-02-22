@@ -82,7 +82,7 @@ package{
 			message = "message;" + message + "\n";
 
 			if ( socket && socket.connected ){
-				logger("Sending message: "+message)
+				//logger("Sending message: "+message)
 				socket.writeUTFBytes( message );
 			}else{
 				logger("Socket not connected");
